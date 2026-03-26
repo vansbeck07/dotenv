@@ -1,0 +1,48 @@
+{
+  "name": "vansbeck07/dotenv",
+  "type": "library",
+  "description": "Make easy access to the environment variables in your application",
+  "keywords": [
+    "phpdotenv",
+    "dotenv",
+    "env"
+  ],
+  "homepage": "https://github.com/vansbeck07/dotenv",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Evans Owusu OFori",
+      "email": "vansbeck07@gmail.com",
+      "role": "Maintainer",
+      "homepage": "https://github.com/vansbeck07"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": "^8.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11.5",
+    "nunomaduro/collision": "^8.8"
+  },
+  "config": {
+    "optimize-autoloader": true
+  },
+  "autoload": {
+    "files": [
+      "src/env.php",
+      "src/env_namespaced.php"
+    ],
+    "psr-4": {
+      "vansbeck07\\Dotenv\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  }
+}
