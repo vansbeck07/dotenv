@@ -1,6 +1,5 @@
 <?php
 
-
 namespace vansbeck07\Dotenv;
 
 class SpecialValue
